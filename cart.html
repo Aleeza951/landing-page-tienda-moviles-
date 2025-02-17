@@ -1,40 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
     <link rel="stylesheet" href="cart.css">
-    <title>Shopping Cart</title>
 </head>
-    <body>
-  
-        <header>
-            Shopping Cart
-        </header>
-        
-        <div class="container">
-            <h2>Your Cart</h2>
-            <table>
-                <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>iPhone 14</td>
-                    <td>$999</td>
-                </tr>
-                <tr>
-                    <td>Samsung S23</td>
-                    <td>$799</td>
-                </tr>
-            </table>
-            <p><strong>Total: $1798</strong></p>
-            <a href="checkout.html" class="btn">Proceed to Checkout</a>
-        </div>
-        
-        <footer>
-            &copy; 2025 Mobile Store | All Rights Reserved
-        </footer>
-        
-        </body>
-        </html>
+<body>
+
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <div class="cart">
+        <h2>🛒 Productos en tu Carrito</h2>
+        <ul id="cart-items">
+            <!-- Los productos del carrito se cargarán aquí -->
+        </ul>
+        <p>Total: <span id="cart-total">$0</span></p>
+        <button onclick="clearCart()">Vaciar Carrito</button>
+    </div>
+
+    <footer>
+        &copy; 2025 Tienda de Móviles y Accesorios | Todos los derechos reservados
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
