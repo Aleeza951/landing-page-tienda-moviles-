@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛍️ Finalizar Compra</h1>
+    </header>
+
+    <div class="cart">
+        <h2>Resumen de tu compra</h2>
+        <ul id="checkout-items">
+            <!-- Aquí se mostrarán los productos en el carrito -->
+        </ul>
+        <p>Total: <span id="checkout-total">$0</span></p>
+
+        <h3>Información de Pago</h3>
+        <form id="payment-form">
+            <label for="full-name">Nombre Completo:</label>
+            <input type="text" id="full-name" placeholder="Nombre Completo" required>
+
+            <label for="card-number">Número de Tarjeta:</label>
+            <input type="text" id="card-number" placeholder="Número de Tarjeta" required>
+
+            <label for="expiry-date">Fecha de Expiración:</label>
+            <input type="text" id="expiry-date" placeholder="MM/AA" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="CVV" required>
+
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Tienda de Móviles | Todos los derechos reservados
+    </footer>
+
+    <script src="pago.js"></script>
+</body>
+</html>

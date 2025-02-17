@@ -5,7 +5,7 @@ body {
     background-color: #f5f5f5;
 }
 header {
-    background-color: #007bff;
+    background-color: #e74c3c; /* Rojo */
     color: white;
     text-align: center;
     padding: 15px;
@@ -24,11 +24,11 @@ input, select {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc; /* Gris claro */
     border-radius: 5px;
 }
 .btn {
-    background: #28a745;
+    background: #e74c3c; /* Rojo */
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -37,10 +37,10 @@ input, select {
     margin-top: 10px;
 }
 .btn:hover {
-    background: #218838;
+    background: #c0392b; /* Rojo más oscuro */
 }
 footer {
-    background: #333;
+    background: #333; /* Negro */
     color: white;
     text-align: center;
     padding: 10px;

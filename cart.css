@@ -1,46 +1,39 @@
 /* Estilos básicos */
 body {
+    background-color: #1a1919; /* Negro */
+    color: #fff; /* Blanco */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    text-align: center;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    background-color: #d32f2f; /* Rojo */
     padding: 20px;
+    font-size: 24px;
 }
 
 .cart {
+    background-color: hsl(0, 0%, 7%); /* Negro oscuro */
     padding: 20px;
-    margin: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #d32f2f; /* Rojo */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
     border-radius: 5px;
 }
 
-.cart ul {
-    list-style-type: none;
-    padding: 0;
+button:hover {
+    background-color: #ff4c4c; /* Rojo más claro */
 }
 
-.cart li {
-    margin: 10px 0;
-}
-
-.cart button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.cart button:hover {
-    background-color: darkred;
-}
 .delete-btn {
     background: none;
     border: none;
@@ -49,8 +42,8 @@ header {
 }
 
 .bin-sticker {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -58,13 +51,23 @@ header {
     transform: scale(1.2);
 }
 
+.checkout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Rojo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.checkout-btn:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+}
 
 footer {
-    text-align: center;
+    margin-top: 20px;
+    background-color: #d32f2f; /* Rojo */
     padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
