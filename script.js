@@ -6,7 +6,12 @@ const products = [
     { id: 4, name: "Audífonos Bluetooth", category: "audifono", price: 99, img: "audifonos.jpg" },
     { id: 5, name: "Cargador Rápido", category: "cargador", price: 49, img: "cargador.jpg" },
     { id: 6, name: "USB 64GB", category: "usb", price: 29, img: "usb.jpg" },
-    { id: 7, name: "Funda para iPhone", category: "funda", price: 19, img: "funda.jpg" }
+    { id: 7, name: "Funda para iPhone", category: "funda", price: 19, img: "funda.jpg" },
+    { id: 8, name: "Altavoz Bluetooth", category: "speaker", price: 40, img: "speaker.jpg" },
+    { id: 9, name: "Power Bank 10,000mAh", category: "powerbank", price: 20, img: "powerbank.jpg" },
+    { id: 10, name: "Soporte para Coche", category: "soporte", price: 12, img: "soporte.jpg" },
+    { id: 11, name: "Tarjeta de Memoria 64GB", category: "memoria", price: 18, img: "memoria.jpg" },
+    { id: 12, name: "Kit de Reparación", category: "repuesto", price: 25, img: "repuesto.jpg" }
 ];
 
 // Carrito de compras
@@ -15,7 +20,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 // Función para renderizar productos
 function renderProducts(filter = 'all') {
     const productList = document.getElementById('product-list');
-    productList.innerHTML = '';
+    productList.innerHTML = ''; // Limpiar lista actual
 
     const filteredProducts = filter === 'all' ? products : products.filter(product => product.category === filter);
     filteredProducts.forEach(product => {
@@ -48,7 +53,7 @@ function updateCartInfo() {
 
 // Ver el carrito (redirigir a la página del carrito)
 function viewCart() {
-    window.location.href = 'cart.html'; // Redirige al carrito (deberías crear la página cart.html)
+    window.location.href = 'cart.html'; // Redirige al carrito
 }
 
 // Filtrar productos
@@ -58,6 +63,10 @@ function filterProducts(category) {
 
 // Inicialización al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
+    renderProducts(); // Mostrar todos los productos por defecto
     updateCartInfo();
 });
+
+function openContact() {
+    window.location.href = 'contacto.html'; // Redirige a la página de contacto
+}

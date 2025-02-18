@@ -1,48 +1,121 @@
+/* Estilo General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #121212; /* Fondo oscuro para mayor contraste */
+    color: #f4f4f4;
 }
+
+/* Header */
 header {
-    background-color: #e74c3c; /* Rojo */
+    background-color: #e74c3c; /* Rojo brillante */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Estilo de campos de entrada */
+input[type="text"], select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+}
+
+/* Efecto cuando el campo está enfocado */
+input[type="text"]:focus, select:focus {
+    border-color: #e74c3c;
+    outline: none;
+    background-color: #ffe6e6; /* Fondo suave al enfocar */
+}
+
+/* Botón principal */
+.btn {
+    display: inline-block;
+    background-color: #e74c3c; /* Rojo brillante */
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.btn:active {
+    background-color: #b71c1c;
+    transform: scale(0.98); /* Efecto de clic */
+}
+
+/* Botón de inicio */
+.home-btn {
+    background-color: #333;
+    padding: 12px 25px;
+    margin-top: 15px;
+}
+
+.home-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 24px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
 }
-.container {
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    text-align: center;
-}
-input, select {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc; /* Gris claro */
-    border-radius: 5px;
-}
-.btn {
-    background: #e74c3c; /* Rojo */
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-.btn:hover {
-    background: #c0392b; /* Rojo más oscuro */
-}
-footer {
-    background: #333; /* Negro */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+
+/* Estilo Responsivo */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+    }
 }

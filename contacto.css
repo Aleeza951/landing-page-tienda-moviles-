@@ -1,0 +1,128 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* Contenedor de contacto con Flexbox */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    max-width: 48%;
+    padding: 20px;
+    background: #292929;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+    max-width: 48%;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info h3 {
+    font-size: 26px;
+    color: #ff3b3b;
+    text-align: center;
+}
+
+.contact-info a {
+    font-size: 18px;
+    color: #ff3b3b;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #ff1a1a;
+}
+
+/* Estilo para el botón 'Volver a Inicio' */
+.btn-2 {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-2 button {
+    background-color: #ff3b3b; /* Rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Tamaño pequeño */
+    font-size: 16px; /* Fuente pequeña */
+    font-weight: bold;
+    border-radius: 8px;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 25rem;
+}
+
+.btn-2 button:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+}
+
+.btn-2 button:active {
+    background-color: #b71c1c; /* Rojo aún más oscuro al hacer clic */
+}
+
+footer{
+    position: relative;
+    top: 10rem;
+    text-align: center;
+}
+/* Responsividad */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        max-width: 90%;
+    }
+}

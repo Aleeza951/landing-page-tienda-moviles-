@@ -1,84 +1,144 @@
-/* Estilos básicos */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #111; /* Negro elegante */
+    color: #fff;
 }
 
+/* Encabezado */
 header {
-    background-color: #e74c3c; /* Rojo */
-    color: white;
+    background-color: #000; /* Negro puro */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
+    border-bottom: 3px solid #d32f2f; /* Línea roja elegante */
 }
 
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Barra de navegación */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333; /* Negro */
-    padding: 10px;
-}
-
-nav button {
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: white; /* Blanco */
-    color: #333; /* Negro */
-    border: none;
-    cursor: pointer;
-}
-
-nav button:hover {
-    background-color: #ddd; /* Gris claro */
-}
-
-.cart-info {
-    margin-left: auto;
-}
-
-.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    gap: 10px;
+    background-color: #1a1919; /* Negro oscuro */
+    padding: 15px;
+    border-bottom: 2px solid #d32f2f;
 }
 
+nav button {
+    background-color: #d32f2f; /* Rojo */
+    color: white;
+    border: 2px solid white;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #d32f2f;
+    border: 2px solid #d32f2f;
+}
+
+/* Carrito */
+.cart-info button {
+    background-color: #d32f2f; /* Rojo */
+    padding: 12px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cart-info button:hover {
+    background-color: white;
+    color: #d32f2f;
+}
+
+/* Sección de productos */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #130f0f; /* Fondo negro puro */
+    min-height: 100vh; /* Ocupar toda la pantalla */
+}
+
+/* Tarjetas de productos */
 .product {
-    background-color: white; /* Blanco */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin: 15px;
+    background-color: #160e0e; /* Negro oscuro */
     padding: 20px;
-    width: 200px;
+    border-radius: 10px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #d32f2f;
+    color: white;
+    position: relative;
+    overflow: hidden;
 }
 
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(211, 47, 47, 0.8);
+}
+
+/* Imagen del producto */
 .product img {
     max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-.product button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #e74c3c; /* Rojo */
+.product:hover img {
+    transform: scale(1.1);
+}
+
+/* Nombre del producto */
+.product h2 {
+    font-size: 20px;
+    margin: 10px 0;
     color: white;
-    border: none;
+}
+
+/* Descripción */
+.product p {
+    color: #bbb;
+}
+
+/* Botón de compra */
+.product button {
+    background-color: #d32f2f;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .product button:hover {
-    background-color: #c0392b; /* Rojo más oscuro */
+    background-color: white;
+    color: #d32f2f;
 }
 
+/* Pie de página */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333; /* Negro */
+    background-color: #000; /* Negro */
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 3px solid #d32f2f;
 }

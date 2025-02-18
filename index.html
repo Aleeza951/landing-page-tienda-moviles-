@@ -21,12 +21,16 @@
         <button onclick="filterProducts('usb')">USB</button>
         <button onclick="filterProducts('funda')">Fundas</button>
         <button onclick="filterProducts('speaker')">Altavoz</button>
-        <button onclick="filterProducts('contact')">Contacto</button>
-        <div class="cart-info">
-            <button onclick="viewCart()">🛒 Carrito (<span id="cart-count">0</span>)</button>
-        </div>
+        <button onclick="filterProducts('powerbank')">Power Banks</button>
+        <button onclick="filterProducts('soporte')">Soportes</button>
+        <button onclick="filterProducts('memoria')">Tarjetas de Memoria</button>
+        <button onclick="filterProducts('repuesto')">Repuestos</button>
+        <button onclick="openContact()">Contacto</button>
     </nav>
-
+    
+    <div class="cart-info">
+        <button onclick="viewCart()">🛒 Carrito (<span id="cart-count">0</span>)</button>
+    </div>
     <div class="container" id="product-list">
         <!-- Los productos se cargarán aquí con JS -->
     </div>
